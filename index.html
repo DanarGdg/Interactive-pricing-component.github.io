@@ -1,52 +1,58 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
     <meta charset="utf-8">
-    <title>Interactive pricing component</title>
+    <title>Interactive pricing component main</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/favicon-32x32.png" type="image" sizes="32x32">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap" rel="stylesheet">
   </head>
   <body>
+    <div class="container">
+      <header class="header">
+        <img src="images/pattern-circles.svg" alt="">
+        <h1>Simple, traffic-based pricing</h1>
+        <p>Sign-up for our 30 days trial.</p>
+        <p>No credit card required.</p>
+      </header>
 
-    <div class="wrap-head">
-      <div class="gambar"></div>
-      <h1>Simple, traffic-based pricing</h1>
-      <p>Sign-up for our 30 days trial. No credit card required. </p>
-    </div>
+      <main class="main">
+        <div class="pageviews-num">
+          <span id="pageviewsNum">100K</span>
+          <span>pageviews</span>
+        </div>
 
-    <div class="container-pricing">
+        <div class="billing-plan">
+          <span id="priceNum">$16.00</span>
+          <span id="planPrice">/month </span>
+        </div>
 
-      <div class="pricing">
-        <span id="pricevalue"> $16.00</span>
-        <span id="choosePlan">/ month</span>
-      </div>
+        <div class="slider-wrap">
+          <input step="25" type="range" min="0" max="100" value="50" class="slider" id="range">
+        </div>
 
-      <p class="pageviews">
-        <span id="pageviewsValue">100K </span>&nbsp P A G E V I E W S
-      </p>
+        <div class="plan-toggle">
+          <span>Monthly Billing</span>
+          <div class="toggle" id="toggleWrap">
+            <div class="ball" id="toggleBall"></div>
+          </div>
+          <span>Yearly Billing</span>
+          <span class="discount">25% </span> <span class="discount discount-2"> discount</span>
+        </div>
 
-      <div>
-        <input step="25" type="range" min="0" max="100" value="50" class="slider" id="range">
-      </div>
-
-      <div class="toggle">
-        <span class="plan-toggle">Monthly Billing</span>
-        <input type="checkbox" id="chk" class="checkbox">
-        <label for="chk" class="label"><div class="bola"></div></label>
-        <span class="plan-toggle">Yearly Billing</span>
-        <span>25% discount</span>
-      </div>
-
-      <div class="bottom-card">
-        <button id="button">Start my trial</button>
-        <ul>
-          <li> <img src="./images/icon-check.svg"> Unlimited Websites</li>
-          <li> <img class="margin-img" src="./images/icon-check.svg"> 100% data ownership</li>
-          <li> <img class="margin-img" src="./images/icon-check.svg"> Email reports</li>
+        <ul class="profit">
+          <li> <img src="images/icon-check.svg" alt=""> Unlimited websites </li>
+          <li> <img src="images/icon-check.svg" alt=""> 100% data ownership</li>
+          <li> <img src="images/icon-check.svg" alt=""> Email reports</li>
         </ul>
-      </div>
 
+        <div class="button-wrap">
+          <button >start my trial</button>
+        </div>
+      </main>
     </div>
-
     <script src="script.js"></script>
 
   </body>
