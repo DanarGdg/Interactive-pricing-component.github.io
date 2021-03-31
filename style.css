@@ -238,7 +238,7 @@ img{
     "togglePlanDiscount"
     "profit"
     "button";
-    width:85%;
+    width:auto;
   }
 
   .pageviews-num{
@@ -250,7 +250,6 @@ img{
 
   .billing-plan{
     justify-self:center;
-    /* margin-bottom:40px; */
   }
 
   .slider-wrap{
@@ -284,7 +283,6 @@ img{
   .profit{
     justify-self:center;
     margin:20px 0;
-    /* margin-bottom:40px; */
   }
 
   .botton-wrap{
